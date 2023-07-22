@@ -299,7 +299,7 @@ class HomeFragmentScreen extends StatelessWidget
                                     width: 10,
                                   ),
                                   Text(
-                                    eachClothItemData.price.toString(),
+                                    eachClothItemData.price!.toStringAsFixed(0),
                                     style: const TextStyle(
                                       color: Colors.blueAccent,
                                       fontSize: 18,
@@ -454,7 +454,7 @@ class HomeFragmentScreen extends StatelessWidget
                                     Padding(
                                       padding: const EdgeInsets.only(left: 12, right: 12),
                                       child: Text(
-                                        "\$ " + eachClothItemRecord.price.toString(),
+                                        "Rp. " + eachClothItemRecord.price!.toStringAsFixed(0),
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         style: const TextStyle(

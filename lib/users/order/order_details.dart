@@ -220,7 +220,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
               //total amount
               showTitleText("Total Bayar:"),
               const SizedBox(height: 8,),
-              showContentText(widget.clickedOrderInfo!.totalAmount.toString()),
+              showContentText(widget.clickedOrderInfo!.totalAmount!.toStringAsFixed(0)),
 
               const SizedBox(height: 26,),
 
@@ -368,19 +368,19 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
 
                       //price
                       Text(
-                        "\$ " + itemInfo["totalAmount"].toString(),
+                        "Rp. " + itemInfo["totalAmount"]!.toStringAsFixed(0),
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
-                          fontSize: 18,
+                          fontSize: 15,
                           color: Colors.blueAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
 
                       Text(
-                        itemInfo["price"].toString() + " x "
+                        itemInfo["price"]!.toStringAsFixed(0) + " x "
                             + itemInfo["quantity"].toString()
-                            + " = " + itemInfo["totalAmount"].toString(),
+                            + " = " + itemInfo["totalAmount"]!.toStringAsFixed(0),
                         style: const TextStyle(
                           color: Colors.grey,
                           fontSize: 12,

@@ -131,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen>
                                   //email
                                   TextFormField(
                                     controller: emailController,
-                                    validator: (val) => val == "" ? "Please write email" : null,
+                                    validator: (val) => val == "" ? "Mohon masukkan email" : null,
                                     decoration: InputDecoration(
                                       prefixIcon: const Icon(
                                         Icons.email,
@@ -178,7 +178,7 @@ class _LoginScreenState extends State<LoginScreen>
                                       ()=> TextFormField(
                                         controller: passwordController,
                                         obscureText: isObsecure.value,
-                                        validator: (val) => val == "" ? "Please write password" : null,
+                                        validator: (val) => val == "" ? "Mohon masukkan password" : null,
                                         decoration: InputDecoration(
                                           prefixIcon: const Icon(
                                             Icons.vpn_key_sharp,

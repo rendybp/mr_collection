@@ -250,7 +250,7 @@ class _SearchItemsState extends State<SearchItems>
                                     Padding(
                                       padding: const EdgeInsets.only(left: 12, right: 12),
                                       child: Text(
-                                        "\$ " + eachClothItemRecord.price.toString(),
+                                        "Rp. " + eachClothItemRecord.price!.toStringAsFixed(0),
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         style: const TextStyle(

@@ -177,7 +177,7 @@ class HistoryScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "Amount: \$ " + eachOrderData.totalAmount.toString(),
+                          "Total: Rp. " + eachOrderData.totalAmount!.toStringAsFixed(0),
                           style: const TextStyle(
                             fontSize: 16,
                             color: Colors.blueAccent,

@@ -323,7 +323,7 @@ class OrderNowScreen extends StatelessWidget
                     children: [
 
                       Text(
-                        "\$" + totalAmount!.toStringAsFixed(2),
+                        "Rp." + totalAmount!.toStringAsFixed(0),
                         style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 20,
@@ -448,7 +448,7 @@ class OrderNowScreen extends StatelessWidget
 
                       //price
                       Text(
-                        "\$ " + eachSelectedItem["totalAmount"].toString(),
+                        "Rp. " + eachSelectedItem["totalAmount"]!.toStringAsFixed(0),
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           fontSize: 18,
@@ -458,9 +458,9 @@ class OrderNowScreen extends StatelessWidget
                       ),
 
                       Text(
-                          eachSelectedItem["price"].toString() + " x "
+                          eachSelectedItem["price"]!.toStringAsFixed(0) + " x "
                               + eachSelectedItem["quantity"].toString()
-                              + " = " + eachSelectedItem["totalAmount"].toString(),
+                              + " = " + eachSelectedItem["totalAmount"]!.toStringAsFixed(0),
                         style: const TextStyle(
                           color: Colors.grey,
                           fontSize: 12,

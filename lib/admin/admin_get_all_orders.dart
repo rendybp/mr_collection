@@ -198,7 +198,7 @@ class AdminGetAllOrdersScreen extends StatelessWidget
                           ),
                         ),
                         Text(
-                          "Total: \$ " + eachOrderData.totalAmount.toString(),
+                          "Total: \nRp. " + eachOrderData.totalAmount!.toStringAsFixed(0),
                           style: const TextStyle(
                             fontSize: 16,
                             color: Colors.blueAccent,

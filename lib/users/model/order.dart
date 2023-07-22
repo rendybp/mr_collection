@@ -51,7 +51,7 @@ class Order
         "deliverySystem": deliverySystem,
         "paymentSystem": paymentSystem,
         "note": note,
-        "totalAmount": totalAmount!.toStringAsFixed(2),
+        "totalAmount": totalAmount!.toStringAsFixed(0),
         "image": image,
         "status": status,
         "shipmentAddress": shipmentAddress,

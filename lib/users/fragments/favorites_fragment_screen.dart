@@ -197,7 +197,7 @@ class FavoritesFragmentScreen extends StatelessWidget
                                     Padding(
                                       padding: const EdgeInsets.only(left: 12, right: 12),
                                       child: Text(
-                                        "\$ " + eachFavoriteItemRecord.price.toString(),
+                                        "Rp. " + eachFavoriteItemRecord.price!.toStringAsFixed(0),
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         style: const TextStyle(
@@ -264,7 +264,7 @@ class FavoritesFragmentScreen extends StatelessWidget
           else
           {
             return const Center(
-              child: Text("Empty, No Data."),
+              child: Text("Tidak ditemukan produk favorit."),
             );
           }
         }

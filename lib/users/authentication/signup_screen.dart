@@ -166,7 +166,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                   //name
                                   TextFormField(
                                     controller: nameController,
-                                    validator: (val) => val == "" ? "Please write name" : null,
+                                    validator: (val) => val == "" ? "Mohon masukkan nama" : null,
                                     decoration: InputDecoration(
                                       prefixIcon: const Icon(
                                         Icons.person,
@@ -211,7 +211,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                   //email
                                   TextFormField(
                                     controller: emailController,
-                                    validator: (val) => val == "" ? "Please write email" : null,
+                                    validator: (val) => val == "" ? "Mohon masukkan email" : null,
                                     decoration: InputDecoration(
                                       prefixIcon: const Icon(
                                         Icons.email,
@@ -258,7 +258,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                         ()=> TextFormField(
                                       controller: passwordController,
                                       obscureText: isObsecure.value,
-                                      validator: (val) => val == "" ? "Please write password" : null,
+                                      validator: (val) => val == "" ? "Mohon masukkan password" : null,
                                       decoration: InputDecoration(
                                         prefixIcon: const Icon(
                                           Icons.vpn_key_sharp,

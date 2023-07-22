@@ -408,7 +408,7 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
 
                       //price
                       Text(
-                        "\$" + widget.itemInfo!.price.toString(),
+                        "Rp. " + widget.itemInfo!.price!.toStringAsFixed(0),
                         style: const TextStyle(
                           fontSize: 24,
                           color: Colors.blueAccent,
